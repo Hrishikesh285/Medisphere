@@ -1,3 +1,4 @@
+fetch("http://localhost:5001/adherence") // for adherence backend
 import React, { useState, useEffect } from 'react';
 import { 
   BarChart2, 
