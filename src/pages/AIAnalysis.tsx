@@ -110,8 +110,7 @@ const AIAnalysis: React.FC = () => {
   };
   
   
-  
-  // Recommendations based on the insights (mock)
+
   const recommendations = [
     'Set up evening reminders 30 minutes before your scheduled medication time',
     'Create a weekend routine to improve adherence during those days',
@@ -120,7 +119,7 @@ const AIAnalysis: React.FC = () => {
     'Use the MediSphere mobile app to receive timely medication reminders',
   ];
   
-  // FAQs about medication adherence
+  // FAQs
   const faqs = [
     {
       question: 'What is medication adherence?',
@@ -140,7 +139,7 @@ const AIAnalysis: React.FC = () => {
     },
   ];
   
-  // Toggle FAQ open/closed
+  // Toggle FAQ
   const toggleFaq = (index: number) => {
     if (openFaqs.includes(index)) {
       setOpenFaqs(openFaqs.filter(i => i !== index));
@@ -149,7 +148,7 @@ const AIAnalysis: React.FC = () => {
     }
   };
   
-  // Notify user if adherence score is below threshold
+  // Notify user 
   useEffect(() => {
     if (mockAdherenceScore < 80) {
       addNotification({
@@ -185,7 +184,7 @@ const AIAnalysis: React.FC = () => {
         </div>
       </div>
       
-      {/* Adherence score card */}
+    
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
         <div className="card bg-gradient-to-br from-primary-500 to-primary-700 text-white p-6">
           <div className="flex justify-between items-start">
@@ -247,7 +246,7 @@ const AIAnalysis: React.FC = () => {
         </div>
       </div>
       
-      {/* Insights and recommendations */}
+    
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
         <div className="card p-6">
           
