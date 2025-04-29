@@ -21,7 +21,7 @@ const Dashboard: React.FC = () => {
   const navigate = useNavigate();
   const [currentTime, setCurrentTime] = useState(new Date());
   
-  // Update current time every minute
+  // Update current time 
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentTime(new Date());
@@ -198,7 +198,7 @@ const Dashboard: React.FC = () => {
           </div>
         </section>
         
-        {/* Adherence score */}
+        
         <section className="card">
           <div className="p-5 border-b border-gray-100">
             <h3 className="font-semibold flex items-center">
